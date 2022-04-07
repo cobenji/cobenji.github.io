@@ -6,9 +6,9 @@
 - [x] Gestion des Routes 
 - [x] Composants Login (non fonctionnelle)
 - [x] Composants Wizard
-- [ ] Composants Tags (en cours)
-- [ ] Chercher dans la BDD les tags correspondants au page
-- [ ] Gestion des pages du Wizard
+- [x] Composants Tags
+- [x] Chercher dans la BDD les tags correspondants au page
+- [ ] Gestion des pages du Wizard (en cours)
 - [ ] Aquisitation des données du Wizard
 - [ ] Liste offres après wizard
 - [ ] Finition Front

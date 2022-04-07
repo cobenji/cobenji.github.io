@@ -1,47 +1,34 @@
 <script>
     import Logo from "../components/header_logo.svelte";
     import { db } from "../firebase_config";
+    import Tag from "../components/tag.svelte";
 
     import { collection, getDocs, query, where } from "firebase/firestore";
 
+    export let page = 1;
+    let tags = [];
+    let ready = false;
+
     (async () => {
-        const q = query(collection(db, "tags"), where("page", "==", 1));
+        const q = query(collection(db, "tags"), where("page", "==", page));
         const querySnapshot = await getDocs(q);
         querySnapshot.forEach((doc) => {
             //console.log(`${doc.id} => ${doc.data()}`);
-            console.dir(doc.data());
+            tags = doc.data().tags;
+            console.log(tags);
         });
+        ready = true;
+        console.dir(tags);
     })();
-
-    let tags = {};
-
-    let page = 1;
 </script>
 
 <Logo />
 
 <h1>YEs</h1>
-
-<div>
-    <input type="checkbox" class="tag" id="CDD" />
-    <label for="CDD" class="tag-wrapper">
-        <span class="">CDD</span>
-    </label>
-</div>
-
-<style lang="postcss">
-    .tag {
-        display: none;
-    }
-
-    .tag-wrapper {
-        display: inline-block;
-    }
-
-    .tag + .tag-wrapper {
-        background-color: red;
-    }
-    .tag:checked + .tag-wrapper {
-        background-color: blue;
-    }
-</style>
+{#if ready}
+    <div class="grid place-content-center">
+        {#each tags as tag}
+            <Tag name={tag} />
+        {/each}
+    </div>
+{/if}
