@@ -33,6 +33,15 @@
 	main {
 		padding: 1em;
 		margin: 0 auto;
+		background: #eaeaea;
+	}
+
+	p {
+		@apply text-text;
+	}
+
+	a:visited {
+		color: inherit;
 	}
 
 	.container {

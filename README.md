@@ -8,12 +8,11 @@
 - [x] Composants Wizard
 - [x] Composants Tags
 - [x] Chercher dans la BDD les tags correspondants au page
-- [ ] Gestion des pages du Wizard (en cours)
+- [x] Gestion des pages du Wizard
+- [ ] Page avec les inputs ranges (en cours)
 - [ ] Aquisitation des données du Wizard
 - [ ] Liste offres après wizard
 - [ ] Finition Front
-- [ ] 
-- [ ] 
 
 
 

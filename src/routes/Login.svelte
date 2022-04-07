@@ -1,5 +1,6 @@
 <script>
     import Logo from "../components/header_logo.svelte";
+    import { Link } from "svelte-navigator";
 </script>
 
 <Logo />
@@ -39,12 +40,11 @@
         >
             Forgot Password?
         </a>
-        <button
-            class="m-auto bg-blue-700 hover:bg-blue-700 text-white font-light mt-5 py-2 px-6 rounded focus:outline-none focus:shadow-outline"
-            type="button"
+        <Link
+            to="/onboarding"
+            class="inline-block my-4 py-2 w-60 bg-mainRed text-white rounded-xl border-none"
+            >Connexion</Link
         >
-            LOGIN
-        </button>
     </div>
 </form>
 

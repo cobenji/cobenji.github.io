@@ -1,9 +1,10 @@
 <script>
     export let name;
+    export let page;
 </script>
 
-<div>
-    <input type="checkbox" class="tag" id={name} />
+<div class="mx-1 my-1 inline-block">
+    <input type="radio" class="tag" id={name} name={page} />
     <label for={name} class="tag-wrapper">
         <span class="">{name}</span>
     </label>

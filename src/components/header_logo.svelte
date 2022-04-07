@@ -2,7 +2,7 @@
     const logo = "";
 </script>
 
-<div class="img_logo mt-8 mt-5 w-full text-center">
+<div class="img_logo mt-8 mb-5 w-full text-center">
     <img
         src="assets/images/logo_schwork.svg"
         alt="Logo Schwork"
