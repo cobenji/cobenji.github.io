@@ -8,11 +8,11 @@
 <main>
 	<Router>
 		<main class="container bg-white">
-			<Route path="/login">
+			<Route path="/">
 				<Login />
 			</Route>
 
-			<Route path="/">
+			<Route path="/onboarding">
 				<Onboarding />
 			</Route>
 

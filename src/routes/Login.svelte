@@ -10,7 +10,7 @@
 <form class="mt-10">
     <div class="mb-4">
         <label class="block text-md font-light mb-2 hidden" for="email"
-            >email</label
+            >Email</label
         >
         <input
             class="w-full bg-drabya-gray border-gray-500 appearance-none border p-4 font-light leading-tight focus:outline-none focus:shadow-outline"
@@ -22,7 +22,7 @@
     </div>
     <div class="mb-4">
         <label class="text-md font-light mb-2 hidden" for="password"
-            >Password</label
+            >Mot de passe</label
         >
         <input
             class="w-full bg-drabya-gray border-gray-500 appearance-none border p-4 font-light leading-tight focus:outline-none focus:shadow-outline"
@@ -38,7 +38,7 @@
             class="block text-right align-baseline font-light text-sm text-indigo-600 hover:text-indigo-500"
             href="#"
         >
-            Forgot Password?
+            Mot de passe oublié?
         </a>
         <Link
             to="/onboarding"
@@ -48,12 +48,8 @@
     </div>
 </form>
 
-<div>
-    <p class="text-center">Ou continuer avec</p>
-</div>
-
 <p class="text-center text-md">
-    Don't have an account? <a class="font-light text-md text-indigo-600"
-        >Create</a
+    Vous n'avez pas de compte ? <a class="font-light text-md text-indigo-600"
+        >Créer</a
     >
 </p>
