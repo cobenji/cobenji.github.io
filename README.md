@@ -4,7 +4,7 @@
 - [x] Préparation de la Stack (Svelte,Tailwind CSS)
 - [x] Mise en place de la BDD (Firebase)
 - [x] Gestion des Routes 
-- [x] Composants Login (non fonctionnelle)
+- [x] Composants Login (non fonctionnel)
 - [x] Composants Wizard
 - [ ] Composants Tags (en cours)
 - [ ] Chercher dans la BDD les tags correspondants au page
