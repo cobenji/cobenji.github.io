@@ -1,30 +1,49 @@
 <script>
-	export let name;
+	import { Router, Route, Link } from "svelte-navigator";
+
+	import Login from "./routes/Login.svelte";
+	import Onboarding from "./routes/Onboarding.svelte";
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<Router>
+		<main class="container bg-white">
+			<Route path="/login">
+				<Login />
+			</Route>
+
+			<Route path="/">
+				<Onboarding />
+			</Route>
+
+			<!-- <Route path="/">
+				<h3>Home</h3>
+				<Link to="/login">Login</Link>
+				<Link to="/onboarding">Onboarding</Link>
+			</Route> -->
+		</main>
+	</Router>
 </main>
 
-<style>
+<style lang="postcss" global>
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+
 	main {
-		text-align: center;
 		padding: 1em;
-		max-width: 240px;
 		margin: 0 auto;
 	}
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
+	.container {
+		margin: auto;
+		width: 375px;
+		height: 667px;
 	}
 
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
+	@media (max-width: 640px) {
+		.container {
+			width: initial;
 		}
 	}
 </style>
